@@ -11,6 +11,11 @@ export default function RouteLayout({children}:{children: React.ReactNode}){
     let session: Session | null=null;
      const [userName, setUsername] = useState("----");
     
+    const logout = async ()=>{
+        supabase.auth.signOut()
+        router.push("/auth/login")
+    }
+
     useEffect(()=>{
         supabase.auth.onAuthStateChange(async ()=>{
             const { data, error } = await supabase.auth.getSession();
@@ -175,7 +180,7 @@ export default function RouteLayout({children}:{children: React.ReactNode}){
                         </ul>
                     </li>
                     <li className="nav-item">
-                        <a href="/auth/logout" className="nav-link">
+                        <a onClick={logout} href="#" className="nav-link">
                             <i className="nav-icon fas fa-sign-out-alt"></i>
                             <p>
                                 Déconnexion

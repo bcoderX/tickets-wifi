@@ -68,7 +68,6 @@ const handleSignUp = async (e: React.FormEvent) => {
           email: state.email,
           password: state.password,
           options: {
-            emailRedirectTo: `${location.origin}/auth/callback`,
             data: {
               "full_name": state.fullName,
             }
