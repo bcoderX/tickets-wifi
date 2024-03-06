@@ -230,16 +230,15 @@ export default function AddTickect() {
                                         <tbody>
                                             {
                                                 data.length > 0 ? data.map((value, index) => {
-                                                    return <tr role="row" className="odd">
+                                                    return <tr key={index+"tickets"} role="row" className="odd">
                                                         {
                                                             Object.values(value).map((val) => {
-                                                                return <td>{val}</td>
+                                                                return <td key={value} >{val}</td>
                                                             })
                                                         }
                                                     </tr>
                                                 }) : null
                                             }
-
 
                                         </tbody>
                                     </table>
@@ -260,7 +259,7 @@ export default function AddTickect() {
                                                     <option value="">----</option>
                                                     {
                                                         wifiList ? wifiList.map((value) => {
-                                                            return <option value={value.id}>{value.name}</option>
+                                                            return <option key={value.id} value={value.id}>{value.name}</option>
                                                         }) : null
                                                     }
                                                 </select>
@@ -271,7 +270,7 @@ export default function AddTickect() {
                                                     <option value="">----</option>
                                                     {
                                                         pricingList ? pricingList.map((value) => {
-                                                            return <option value={value.id}>{value.name}</option>
+                                                            return <option key={value.id} value={value.id}>{value.name}</option>
                                                         }) : null
                                                     }
                                                 </select>
@@ -282,7 +281,7 @@ export default function AddTickect() {
                                                     <option value="">----</option>
                                                     {
                                                         ticketTypeList ? ticketTypeList.map((value) => {
-                                                            return <option value={value.id}>{value.name}</option>
+                                                            return <option key={value.id} value={value.id}>{value.name}</option>
                                                         }) : null
                                                     }
                                                 </select>

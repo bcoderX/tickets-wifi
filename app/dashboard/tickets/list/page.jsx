@@ -120,7 +120,7 @@ export default function TicketsList(){
                                                             ) :
                                                             currentPage.map((value, index) => {
                                                                 return (
-                                                                    <tr role="row" className="odd">
+                                                                    <tr key={value.username+index} role="row" className="odd">
 
                                                                         <td tabIndex={0}>
                                                                             {value.username}

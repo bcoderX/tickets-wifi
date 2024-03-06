@@ -14,7 +14,7 @@ useEffect(()=>{
         router.push("/dashboard");
     }
 });
-}, [])
+}, ['router', 'supabase.auth'])
 
 const [state, setState] = useState({
   email: "",
@@ -165,7 +165,7 @@ const handleSignUp = async (e: React.FormEvent) => {
                 <div className="icheck-primary cursor-pointer">
                       <input onChange={()=>setAgree(!agree)} name="acceptConditions" type="checkbox" id="agreeTerms" required />
                       <label className="ml-3" htmlFor="agreeTerms">
-                       J'accepte les <a href="#">conditions</a>
+                       J&#39;accepte les <a href="#">conditions</a>
                       </label>
                     </div>
                     
@@ -192,9 +192,9 @@ const handleSignUp = async (e: React.FormEvent) => {
         {/* /.register-box */}
         
         {/* jQuery */}
-        <script src="../../plugins/jquery/jquery.min.js"></script>
+        <script src="../../plugins/jquery/jquery.min.js" defer></script>
         {/* AdminLTE App */}
-        <script src="../../dist/js/adminlte.min.js"></script>
+        <script src="../../dist/js/adminlte.min.js" defer></script>
         </body>
     );
 }

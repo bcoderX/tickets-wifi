@@ -105,7 +105,7 @@ export default function WifiZoneList() {
                           <th className="sorting" tabIndex={0} aria-controls="example2" rowSpan={1}
                             colSpan={1}
                             aria-label="Code d'intégration: activate to sort column ascending">Code
-                            d'intégration</th>
+                            d&#39;intégration</th>
                           <th className="sorting" tabIndex={0} aria-controls="example2" rowSpan={1}
                             colSpan={1} aria-label="Actions: activate to sort column ascending">
                             Actions</th>
@@ -115,8 +115,6 @@ export default function WifiZoneList() {
 
                         {
                           currentPage != null ?
-
-
                           currentPage.length==0?
                           (
                             <tr>
@@ -125,7 +123,7 @@ export default function WifiZoneList() {
                           ):
                             currentPage.map((value, index) => {
                               return (
-                                <tr role="row" className="odd">
+                                <tr key={value.name} role="row" className="odd">
                                   
                                   <td tabIndex={0}>
                                     {value.name}

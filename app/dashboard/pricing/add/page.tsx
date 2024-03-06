@@ -158,7 +158,7 @@ export default function AddPricing() {
                       <option value="">----</option>
                         {
                           currentPage ? currentPage.map((value) => {
-                            return <option value={value.id}>{value.name}</option>
+                            return <option key={value.id} value={value.id}>{value.name}</option>
                           }) : null
                         }
                       </select>

@@ -48,9 +48,9 @@ export default function RecoverPassword() {
       {/* /.login-box */}
 
       {/* jQuery */}
-      <script src="../../plugins/jquery/jquery.min.js"></script>
+      <script src="../../plugins/jquery/jquery.min.js" defer></script>
       {/* AdminLTE App */}
-      <script src="../../dist/js/adminlte.min.js"></script>
+      <script src="../../dist/js/adminlte.min.js" defer></script>
 
     </body>
   );

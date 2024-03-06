@@ -15,7 +15,7 @@ export default function RecoverPassword() {
           router.push("/dashboard");
       }
   });
-  },[])
+  },['router', 'supabase.auth'])
 
   const [state, setState] = useState({
     email: "",
@@ -137,9 +137,9 @@ export default function RecoverPassword() {
       {/* /.login-box */}
 
       {/* jQuery */}
-      <script src="../../plugins/jquery/jquery.min.js"></script>
+      <script src="../../plugins/jquery/jquery.min.js" defer></script>
       {/* AdminLTE App */}
-      <script src="../../dist/js/adminlte.min.js"></script>
+      <script src="../../dist/js/adminlte.min.js" defer></script>
 
     </body>
   );

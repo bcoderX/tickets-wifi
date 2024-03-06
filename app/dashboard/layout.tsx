@@ -38,8 +38,6 @@ export default function RouteLayout({children}:{children: React.ReactNode}){
                 </li>
             </ul>
 
-
-
             {/* Right navbar links */}
             <ul className="navbar-nav ml-auto">
 
@@ -207,11 +205,11 @@ export default function RouteLayout({children}:{children: React.ReactNode}){
     {/* /.control-sidebar */}
   </div>
 {/* jQuery */ }
-<script src="/plugins/jquery/jquery.min.js"></script>
+<script src="/plugins/jquery/jquery.min.js" defer></script>
 
 {/* <Format /> */}
 {/* AdminLTE App */ }
-<script src="/dist/js/adminlte.js"></script>
+<script src="/dist/js/adminlte.js" defer></script>
 
 {/* page script */ }
 </body >

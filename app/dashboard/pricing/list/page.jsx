@@ -61,7 +61,7 @@ export default function PricingList(props) {
                       <option value="">Tous</option>
                         {
                           currentWifiZonePage ? currentWifiZonePage.map((value) => {
-                            return <option value={value.name}>{value.name}</option>
+                            return <option key={value.id} value={value.name}>{value.name}</option>
                           }) : null
                         }
                       </select>
@@ -121,8 +121,7 @@ export default function PricingList(props) {
                                                             ) :
                                                             currentPage.map((value, index) => {
                                                                 return (
-                                                                    <tr role="row" className="odd">
-
+                                                                    <tr key={value.name+value.wifi_zones.name} role="row" className="odd">
                                                                         <td tabIndex={0}>
                                                                             {value.name}
                                                                         </td>
@@ -165,7 +164,7 @@ export default function PricingList(props) {
                                                         currentPage.length == 0 ? null :
                                                             pages.map((value, index) => {
                                                                 return (
-                                                                    <li onClick={setPage ? () => setPage(index) : () => { }} className={"paginate_button page-item " + (pageIndex == index ? "active" : "")}><a href="#"
+                                                                    <li key={index} onClick={setPage ? () => setPage(index) : () => { }} className={"paginate_button page-item " + (pageIndex == index ? "active" : "")}><a href="#"
                                                                         aria-controls="example2" data-dt-idx="1" tabIndex={0}
                                                                         className="page-link">{index + 1}</a></li>
                                                                 )

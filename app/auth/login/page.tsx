@@ -14,7 +14,7 @@ export default function LoginPage() {
           router.push("/dashboard");
       }
   });
-  },[])
+  },['router', 'supabase.auth'])
 
   const [state, setState] = useState({
     email: "",
@@ -134,7 +134,7 @@ export default function LoginPage() {
               <div className="icheck-primary cursor-pointer">
                 <input onChange={() => setAgree(!agree)} name="acceptConditions" type="checkbox" id="agreeTerms" required  />
                 <label className="ml-3" htmlFor="agreeTerms">
-                  J'accepte les <a href="#">conditions</a>
+                  J&#39;accepte les <a href="#">conditions</a>
                 </label>
               </div>
 
@@ -165,9 +165,9 @@ export default function LoginPage() {
       {/* /.login-box */}
 
       {/* jQuery */}
-      <script src="../../plugins/jquery/jquery.min.js"></script>
+      <script src="../../plugins/jquery/jquery.min.js" defer></script>
       {/* AdminLTE App */}
-      <script src="../../dist/js/adminlte.min.js"></script>
+      <script src="../../dist/js/adminlte.min.js" defer></script>
 
     </body>
   );

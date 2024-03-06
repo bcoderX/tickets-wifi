@@ -66,7 +66,7 @@ export default function Dashboard(){
             <div className="inner">
               <h3>0 F CFA</h3>
 
-              <p>Nombres de tickets vendus aujourd'hui</p>
+              <p>Nombres de tickets vendus aujourd&#39;hui</p>
             </div>
             <a href="#" className="small-box-footer">Voir plus <i className="fas fa-arrow-circle-right"></i></a>
           </div>
@@ -78,7 +78,7 @@ export default function Dashboard(){
       <div className="row">
         <div className="col-12">
           <div className="card card-primary">
-            <div className="card-header">Aujourd'hui le 02/12/2023</div>
+            <div className="card-header">Aujourd&#39;hui le 02/12/2023</div>
             <div className="card-body">
               <h3>Ventes du jour</h3>
             </div>
