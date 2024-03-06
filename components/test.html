@@ -1,0 +1,150 @@
+<div className="content-wrapper">
+    {/* Content Header (Page header) */}
+    <section className="content-header">
+        <div className="container-fluid">
+            <div className="row mb-2">
+                <div className="col-sm-6">
+                    <h1>Mes Wifi Zones</h1>
+                </div>
+                <div className="col-sm-6">
+                    <ol className="breadcrumb float-sm-right">
+                        <li className="breadcrumb-item active">Tous</li>
+                    </ol>
+                </div>
+            </div>
+        </div>{/* /.container-fluid */}
+    </section>
+
+    {/* Main content */}
+    <section className="content card pt-3 pb-3 bg-white">
+
+        <div className="container-fluid">
+            <div className="row">
+                <div className="col-12 ">
+                    {/* Default box */}
+                    <a href="/dashboard/wifi-zones/add" className="btn btn-lg btn-primary">Ajouter un nouveau</a>
+                    <div id="example2_wrapper" className="dataTables_wrapper dt-bootstrap4 no-footer">
+                        <div className="row">
+                            <div className="col-sm-12 col-md-6"></div>
+                            <div className="col-sm-12 col-md-6">
+                                <div id="example2_filter" className="dataTables_filter"><label>Search:<input
+                                            type="search" className="form-control form-control-sm" placeholder=""
+                                            aria-controls="example2" /></label></div>
+                            </div>
+                        </div>
+                        <div className="row">
+                            <div className="col-sm-12">
+                                <table id="example2"
+                                    className="table table-bordered table-striped dataTable no-footer dtr-inline"
+                                    role="grid" aria-describedby="example2_info">
+                                    <thead>
+                                        <tr role="row">
+                                            <th className="sorting" tabIndex={0} aria-controls="example2" rowSpan={1}
+                                                colSpan={1} aria-label="Nom: activate to sort column ascending">Nom</th>
+                                            <th className="sorting" tabIndex={0} aria-controls="example2" rowSpan={1}
+                                                colSpan={1} aria-label="Description: activate to sort column ascending">
+                                                Description</th>
+                                            <th className="sorting" tabIndex={0} aria-controls="example2" rowSpan={1}
+                                                colSpan={1} aria-label="DNS: activate to sort column ascending">DNS</th>
+                                            <th className="sorting" tabIndex={0} aria-controls="example2" rowSpan={1}
+                                                colSpan={1} aria-label="Contact: activate to sort column ascending">
+                                                Contact</th>
+                                            <th className="sorting_desc" tabIndex={0} aria-controls="example2"
+                                                rowSpan={1} colSpan={1}
+                                                aria-label="Système: activate to sort column ascending"
+                                                aria-sort="descending">Système</th>
+                                            <th className="sorting" tabIndex={0} aria-controls="example2" rowSpan={1}
+                                                colSpan={1}
+                                                aria-label="Code d'intégration: activate to sort column ascending">Code
+                                                d'intégration</th>
+                                            <th className="sorting" tabIndex={0} aria-controls="example2" rowSpan={1}
+                                                colSpan={1} aria-label="Actions: activate to sort column ascending">
+                                                Actions</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+
+
+
+                                        <tr role="row" className="odd">
+                                            <td tabIndex={0} className="">Trident</td>
+                                            <td>Internet
+                                                Explorer 5.5
+                                            </td>
+                                            <td>Win 95+</td>
+                                            <td>5.5</td>
+                                            <td className="sorting_1">A</td>
+                                            <td className="text-center"><span
+                                                    className="m-3 ml-3 mr-3 pl-2 pr-2 pt-1 pb-1 border border-success rounded ">
+                                                    <i className="fas fa-copy text-success"></i>
+                                                </span>
+                                            </td>
+                                            <td className="text-center">
+                                                <span
+                                                    className="mt-3 mb-3 ml-3 pl-2 pr-1 pt-1 pb-1 border border-primary rounded ">
+                                                    <i className="fas fa-edit text-primary"></i>
+                                                </span>
+                                                <span
+                                                    className="mt-3 mb-3 ml-1 mr-3 pl-2 pr-2 pt-1 pb-1 border border-danger rounded ">
+                                                    <i className="fas fa-trash text-danger"></i>
+                                                </span>
+                                            </td>
+                                        </tr>
+                                        <tr role="row" className="even">
+                                            <td tabIndex={0} className="">Trident</td>
+                                            <td>Internet
+                                                Explorer 6
+                                            </td>
+                                            <td>Win 98+</td>
+                                            <td>6</td>
+                                            <td className="sorting_1">A</td>
+                                            <td className="text-center"><span
+                                                    className="m-3 ml-3 mr-3 pl-2 pr-2 pt-1 pb-1 border border-success rounded ">
+                                                    <i className="fas fa-copy text-success"></i>
+                                                </span>
+                                            </td>
+                                            <td className="text-center">
+                                                <span
+                                                    className="mt-3 mb-3 ml-3 pl-2 pr-1 pt-1 pb-1 border border-primary rounded ">
+                                                    <i className="fas fa-edit text-primary"></i>
+                                                </span>
+                                                <span
+                                                    className="mt-3 mb-3 ml-1 mr-3 pl-2 pr-2 pt-1 pb-1 border border-danger rounded ">
+                                                    <i className="fas fa-trash text-danger"></i>
+                                                </span>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div className="row">
+                            <div className="col-sm-12 col-md-5">
+                                <div className="dataTables_info" id="example2_info" role="status" aria-live="polite">
+                                    Showing 1 to 2 of 2 entries</div>
+                            </div>
+                            <div className="col-sm-12 col-md-7">
+                                <div className="dataTables_paginate paging_simple_numbers" id="example2_paginate">
+                                    <ul className="pagination">
+                                        <li className="paginate_button page-item previous disabled"
+                                            id="example2_previous"><a href="#" aria-controls="example2" data-dt-idx="0"
+                                                tabIndex={0} className="page-link">Previous</a></li>
+                                        <li className="paginate_button page-item active"><a href="#"
+                                                aria-controls="example2" data-dt-idx="1" tabIndex={0}
+                                                className="page-link">1</a></li>
+                                        <li className="paginate_button page-item next disabled" id="example2_next"><a
+                                                href="#" aria-controls="example2" data-dt-idx="2" tabIndex={0}
+                                                className="page-link">Next</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {/* /.table */}
+                </div>
+            </div>
+        </div>
+    </section>
+    {/* /.content */}
+
+</div>
